@@ -5,26 +5,26 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <a class="logo">
         <img src="image/logo/logo.svg" alt="Логотип городка Седона в Аризоне" width="140" height="70">
       </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">О Седоне</a></li>
-          <li><a>Гостиницы</a></li>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">О Седоне</a></li>
+          <li class="navigation-item"><a class="navigation-link">Гостиницы</a></li>
         </ul>
       </nav>
-        <div>
-          <ul>
-            <li>
-              <a href="#"><img src="image/icon/Поиск.png" alt="Поиск"></a>
+        <div class="navigation-box">
+          <ul class="navigation-list-box">
+            <li class="navigation-item-box">
+              <a class="navigation-link-box" href="#"><img src="image/icon/Поиск.png" alt="Поиск"></a>
             </li>
-            <li>
-              <a href="#"><img src="image/icon/heart.png" alt="Добавить в Избранное"></a><p>12</p>
+            <li class="navigation-item-box">
+              <a class="navigation-link-box" href="#"><img src="image/icon/heart.png" alt="Добавить в Корзину"></a><p>12</p>
             </li>
-            <li>
+            <li class="navigation-item-box button">
               <a href="#">ХОЧУ СЮДА!</a>
             </li>
           </ul>
@@ -32,17 +32,123 @@
         </div>
 
     </header>
-    <main>
+    <main class="main-catalog">
       <h1 class="visually-hidden"> Гостиницы Седоны </h1>
 
-      <section>
-        <h2> Гостиницы Седоны </h2>
+      <div>
        <a href="index.html"><img src="img/home.png" alt="Ссылка на Главную страницу"></a>
-       <img src="img/breadcrumbs.png" alt="Переход">
+       &gt;
        <p><a>Гостиницы</a></p>
+      </div>
 
-     </section>
 
+       <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="checked-choose">
+          <p>Инфраструктура:</p>
+
+          <input type="checkbox" name=subscribe-bath id="subscribe-field-bath"checked>
+          <label for="subscribe-field-bath">Бассейн</label>
+          <input type="checkbox" name=subscribe-car id="subscribe-field-car"checked>
+          <label for="subscribe-field-car">Парковка</label>
+          <input type="checkbox" name=subscribe-wi-fi id="subscribe-field-wi-fi">
+          <label for="subscribe-field-wi-fi">Wi-Fi</label>
+       </div>
+        <div class="type-home">
+          <p>Тип жилья:</p>
+          <label>
+            <input type="radio" name="radio-home" value="Гостиница" checked>Гостиница
+          </label>
+          <label>
+            <input type="radio" name="radio-home" value="Мотель">Мотель
+          </label>
+          <label>
+            <input type="radio" name="radio-home" value="Апартаменты">Апартаменты
+          </label>
+        </div>
+        <div class="cost-form">
+        <p>Стоимость, ₽: </p>
+        <div>
+        <label for="cost-from">от </label>
+           <input type="text" value="0" id="cost-from">
+       </div>
+        <div>
+          <label for="cost-to">до </label>
+            <input type="text" value="9000" id="cost-to">
+        </div>
+
+        <div></div><!--рисует прогресс линию-->
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div>
+        <button class="button" type="submit">Применить</button>
+        <button class="button-reset" type="reset">Сбросить</button>
+        </div>
+      </form>
+
+      </section>
+      <section>
+        <h2>Найдено гостиниц</h2> <b >38</b>
+        <form class="appointment-form-select" action="https://echo.htmlacademy.ru/" method="get">
+          <select name="theme">
+          <option value="catalog.html?view=tile">Сначала дешевые </option>
+          <option value="catalog.html?view=card">от 0</option>
+          <option value="catalog.html?view=list">до 9000 </option>
+          </select>
+          <input type="submit" value="Отправить" class="visually-hidden">
+        </form>
+
+      </section>
+      <section>
+        <ul>
+          <li>
+            <h3>Amara Resort & Spa</h3>
+            <img src="image/img catalog/hotel-1.jpg">
+            <p>Гостиница</p><b>От 4000 P</b>
+            <a href="#" class="button">Подробнее</a>
+            <button class="button" type="button">В избранное</button>
+             <span> Рейтинг: 8,5 </span>
+          </li>
+          <li>
+            <h3>Villas at Poco Diablo</h3>
+            <img src="image/img catalog/hotel-2.jpg">
+            <p>Гостиница</p><b>От 5000 P</b>
+            <a href="#" class="button">Подробнее</a>
+            <button class="button" type="button">В избранное</button>
+             <span> Рейтинг: 9,2 </span>
+          </li>
+          <li>
+            <h3>Desert Quail Inn</h3>
+            <img src="image/img catalog/hotel-3.jpg">
+            <p>Гостиница</p><b>От 2500 P</b>
+            <a href="#" class="button">Подробнее</a>
+            <button class="button" type="button">В избранное</button>
+             <span> Рейтинг: 6,9</span>
+          </li>
+          <li>
+            <h3>GreenTree Inn</h3>
+            <img src="image/img catalog/hotel-4.jpg">
+            <p>Гостиница</p><b>От 1500 P</b>
+            <a href="#" class="button">Подробнее</a>
+            <button class="button" type="button">В избранное</button>
+             <span> Рейтинг: 5,0 </span>
+          </li>
+
+        </ul>
+
+        <div>
+          <a href="#"><p>1</p></a>
+          <a href="#"><p>2</p></a>
+          <a href="#"><p>3</p></a>
+          <a href="#"><p>4</p></a>
+          <a href="#"><p>...</p></a>
+          <a href="#"><p>10</p></a>
+
+
+        </div>
+
+      </section>
 
           <section>
         <h2>Подпишитесь на рассылку</h2>
@@ -50,7 +156,7 @@
 
           <form action="https://echo.htmlacademy.ru" method="post">
 
-              <input name="e-mail" type="text" value="Ваш e-mail">
+              <input name="e-mail" type="email" placeholder="Ваш e-mail">
               <input type="submit" value="ПОДПИСАТЬСЯ">
           </form>
       </section>
