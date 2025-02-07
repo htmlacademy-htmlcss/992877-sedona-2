@@ -74,17 +74,16 @@
         <div class="cost-form">
         <p>Стоимость, ₽: </p>
            <label for="cost-from">от </label>
-           <input type="text" value="0" id="cost-from">
+           <input type="number" value="0" id="cost-from">
        </div>
         <div>
           <label for="cost-to">до </label>
-            <input type="text" value="9000" id="cost-to">
+            <input type="number" value="9000" id="cost-to">
         </div>
 
-        <div></div><!--рисует прогресс линию-->
-        <div></div>
-        <div></div>
-        <div></div>
+        <div><meter id="cost-form" min="0" max="9000" value="7000">
+             </meter>
+        </div><!--рисует прогресс линию-->
 
         <div>
         <button class="button" type="submit">Применить</button>
@@ -97,9 +96,10 @@
         <h2>Найдено гостиниц</h2> <b >38</b>
 
           <select name="theme">
+
           <option value="catalog.html?view=tile">Сначала дешевые </option>
-          <option value="catalog.html?view=card">от 0</option>
-          <option value="catalog.html?view=list">до 9000 </option>
+          <option value="catalog.html?view=card">Сначала дорогие</option>
+          <option value="catalog.html?view=list">Сначала популярные</option>
           </select>
           <ul>
 
