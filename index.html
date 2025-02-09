@@ -5,26 +5,26 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <a class="logo">
         <img src="image/logo/logo.svg" alt="Логотип городка Седона в Аризоне" width="140" height="70">
       </a>
-      <nav>
-        <ul>
-          <li><a>Главная</a></li>
-          <li><a href="#">О Седоне</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item"><a class="navigation-link">Главная</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">О Седоне</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
-        <div>
-          <ul>
-            <li>
-              <a href="#"><img src="image/icon/Поиск.png" alt="Поиск"></a>
+        <div class="navigation-box">
+          <ul class="navigation-list-box">
+            <li class="navigation-item-box">
+              <a class="navigation-link-box" href="#"><img src="image/icon/Поиск.png" alt="Поиск"></a>
             </li>
-            <li>
-              <a href="#"><img src="image/icon/heart.png" alt="Добавить в Избранное"></a><p>12</p>
+            <li class="navigation-item-box">
+              <a class="navigation-link-box" href="#"><img src="image/icon/heart.png" alt="Добавить в Корзину"></a><p>12</p>
             </li>
-            <li>
+            <li class="navigation-item-box button">
               <a href="#">ХОЧУ СЮДА!</a>
             </li>
           </ul>
@@ -32,7 +32,7 @@
         </div>
 
     </header>
-    <main>
+    <main class="main-index">
       <h1 class="visually-hidden">Седона — небольшой городок в Аризоне. Добро пожаловать! </h1>
 
       <section>
@@ -115,11 +115,49 @@
 
           <form action="https://echo.htmlacademy.ru" method="post">
 
-              <input name="e-mail" type="text" value="Ваш e-mail">
+              <input name="e-mail" type="email" placeholder="Ваш e-mail">
               <input type="submit" value="ПОДПИСАТЬСЯ">
           </form>
       </section>
+      <section>
 
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <div>
+            <h2>Поиск гостиницы в Седоне</h2>
+            <input type="button" value="X">
+          </div>
+            <label >Дата Заезда
+              <input type="date" name="data-start" >
+            </label>
+            <p>Мы не можем отправить вас в прошлое.</p>
+            <label >Дата Выезда
+              <input type="date" name="data-finish">
+            </label>
+            <p>На эти даты есть свободные номера. Пока есть.</p>
+            <div>
+              <label for="men">
+                Взрослые:
+              </label>
+              <button>-</button>
+              <input type="number" value="2" id="men">
+              <button>+</button>
+              <label for="child">
+                Дети:
+              </label>
+               <img src="img/info.svg" alt="Комментарий">
+               <p>
+               Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+               </p>
+
+              <button>-</button>
+              <input type="number" value="2" id="child">
+              <button>+</button>
+            </div>
+
+            <input type="submit">
+        </form>
+
+      </section>
     </main>
     <footer>
       <div>
