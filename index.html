@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
       <a class="logo">
-        <img src="image/logo/logo.svg" alt="Логотип городка Седона в Аризоне" width="140" height="70">
+        <img src="image/logo-header.svg" alt="Логотип городка Седона в Аризоне" width="140" height="70">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -17,16 +17,15 @@
         </ul>
       </nav>
         <div class="navigation-box">
-          <ul class="navigation-list-box">
-            <li class="navigation-item-box">
-              <a class="navigation-link-box" href="#"><img src="image/icon/Поиск.png" alt="Поиск"></a>
+          <ul class="navigation-box-list">
+            <li class="navigation-box-item">
+              <a class="navigation-box-link" href="#"><img src="image/icon/Поиск.png" alt="Поиск"></a>
             </li>
-            <li class="navigation-item-box">
-              <a class="navigation-link-box" href="#"><img src="image/icon/heart.png" alt="Добавить в Корзину"></a><p>12</p>
+            <li class="navigation-box-item">
+              <a class="navigation-box-link" href="#"><img src="image/icon/heart.png" alt="Добавить в Корзину"></a><p>12</p>
             </li>
             <li class="navigation-item-box button">
               <a href="#">ХОЧУ СЮДА!</a>
-            </li>
           </ul>
 
         </div>
@@ -35,17 +34,18 @@
     <main class="main-index">
       <h1 class="visually-hidden">Седона — небольшой городок в Аризоне. Добро пожаловать! </h1>
 
-      <section>
+      <section class="title-welcome">
         <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
         <img src="image/welcome.svg" alt="Добро пожаловать в Седону">
 
      </section>
-      <section><h2>Седона — небольшой городок в Аризоне,
+      <section class="reason-box">
+        <h2>Седона — небольшой городок в Аризоне,
         заслуживающий большего! </h2>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 
       </section>
-      <section>
+      <section class="advantages-box">
         <h2 class="visually-hidden">Преимущества</h2>
 
 
@@ -53,7 +53,7 @@
           <li>
             <h3>Настоящий городок</h3>
             <p> Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-           <img src="image/photo-1.jpg" alt="Вид на Гостиницу">
+           <img src="image/view-hotel.jpg" alt="Вид на Гостиницу">
 
           </li>
           <li>
@@ -72,7 +72,7 @@
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li>
-            <img src="image/photo-2.jpg" alt="Вид на мост">
+            <img src="image/bridge.jpg" alt="Вид на мост">
 
              <h3>Там есть
               мост дьявола</h3>
@@ -109,7 +109,7 @@
           <button type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       </section>
 
-      <section>
+      <section class="newsletter">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
 
@@ -119,47 +119,9 @@
               <input type="submit" value="ПОДПИСАТЬСЯ">
           </form>
       </section>
-      <section>
 
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <div>
-            <h2>Поиск гостиницы в Седоне</h2>
-            <input type="button" value="X">
-          </div>
-            <label >Дата Заезда
-              <input type="date" name="data-start" >
-            </label>
-            <p>Мы не можем отправить вас в прошлое.</p>
-            <label >Дата Выезда
-              <input type="date" name="data-finish">
-            </label>
-            <p>На эти даты есть свободные номера. Пока есть.</p>
-            <div>
-              <label for="men">
-                Взрослые:
-              </label>
-              <button>-</button>
-              <input type="number" value="2" id="men">
-              <button>+</button>
-              <label for="child">
-                Дети:
-              </label>
-               <img src="img/info.svg" alt="Комментарий">
-               <p>
-               Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-               </p>
-
-              <button>-</button>
-              <input type="number" value="2" id="child">
-              <button>+</button>
-            </div>
-
-            <input type="submit">
-        </form>
-
-      </section>
     </main>
-    <footer>
+    <footer class="footer-contacts">
       <div>
       <ul>
         <li>
@@ -176,7 +138,45 @@
       <a href="tel:+7818121212">+7 (812) 812-12-12</a>
       <img src="image/Logo.svg" alt="Логотип HTML Academy">
     </footer>
+    <section class="form-pop-up-search">
 
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <div>
+          <h2>Поиск гостиницы в Седоне</h2>
+          <input type="button" value="X">
+        </div>
+          <label >Дата Заезда
+            <input type="date" name="data-start" >
+          </label>
+          <p>Мы не можем отправить вас в прошлое.</p>
+          <label >Дата Выезда
+            <input type="date" name="data-finish">
+          </label>
+          <p>На эти даты есть свободные номера. Пока есть.</p>
+          <div>
+            <label for="men">
+              Взрослые:
+            </label>
+            <button type="button">-</button>
+            <input type="number" value="2" id="men">
+            <button type="button">+</button>
+            <label for="child">
+              Дети:
+            </label>
+             <img src="img/info.svg" alt="Комментарий">
+             <p>
+             Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+             </p>
+
+            <button type="button">-</button>
+            <input type="number" value="2" id="child">
+            <button type="button">+</button>
+          </div>
+
+          <button type="submit"></button>
+      </form>
+
+    </section>
 
   </body>
 </html>
