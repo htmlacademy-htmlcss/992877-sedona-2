@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Marina KATANAEVA](https://up.htmlacademy.ru/htmlcss-individual/2/user/992877).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Александр Козюков](https://htmlacademy.ru/profile/id1119885).
+* Сайт: [Мой проект Седона](https://ultramarinecolor.github.io/992877-sedona-2/) 
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
