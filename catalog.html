@@ -11,7 +11,7 @@
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="index.html" aria-current="page">Главная</a></li>
           <li class="navigation-item"><a class="navigation-link" href="#">О Седоне</a></li>
           <li class="navigation-item"><a class="navigation-link" href="#">Гостиницы</a></li>
         </ul>
@@ -22,7 +22,7 @@
               <a class="navigation-box-link" href="#"><img src="image/icon/search.png" alt="Поиск"></a>
             </li>
             <li class="navigation-box-item">
-              <a class="navigation-box-link" href="#"><img src="image/icon/heart.png" alt="Добавить в Корзину"></a><p>12</p>
+              <a class="navigation-box-link" href="#"><img src="image/icon/heart.png" alt="Добавить в Корзину"></a><span>12</span>
             </li>
             <li class="navigation-box-item button">
               <a href="#">ХОЧУ СЮДА!</a>
@@ -38,28 +38,32 @@
 
       <div>
        <a href="index.html"><img src="img/home.png" alt="Ссылка на Главную страницу"></a>
-       &gt;
+
        <p><a>Гостиницы</a></p>
       </div>
 
 
        <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="checked-choose">
-          <h2>Инфраструктура:</h2>
-          <label for="subscribe-field-bath">
+
+
+          <fieldset class="checked-choose">
+          <legend>Инфраструктура:</legend>
+            <label for="subscribe-field-bath">
             <input type="checkbox" name="subscribe-bath" id="subscribe-field-bath" checked>
             <span>Бассейн</span>
-        </label>
-        <label for="subscribe-field-car">
+            </label>
+            <label for="subscribe-field-car">
           <input type="checkbox" name="subscribe-car" id="subscribe-field-car" checked>
           <span>Парковка</span></label>
           <label for="subscribe-field-wi-fi">
             <input type="checkbox" name="subscribe-wi-fi" id="subscribe-field-wi-fi">
           <span> Wi-Fi </span>
-        </label>
-       </div>
-        <div class="type-home">
-          <h2>Тип жилья:</h2>
+          </label>
+      </fieldset>
+
+
+        <fieldset class="cost-fieldset-radio">
+          <legend>Тип жилья:</legend>
           <label>
             <input type="radio" name="radio-home" value="Гостиница" checked>Гостиница
           </label>
@@ -70,24 +74,32 @@
             <input type="radio" name="radio-home" value="Апартаменты">Апартаменты
           </label>
 
-        </div>
-        <div class="cost-form">
-        <p>Стоимость, ₽: </p>
-           <label for="cost-from">от </label>
-           <input type="number" value="0" id="cost-from">
-       </div>
-        <div>
-          <label for="cost-to">до </label>
+        </fieldset>
+
+        <fieldset class="cost-fieldset">
+          <legend>Стоимость, ₽:</legend>
+          <div class="cost-wrapper">
+           <div class="cost-from">
+            <label for="cost-from">от</label>
+            <input type="number" value="0" id="cost-from">
+           </div>
+           <div>
+            <label for="cost-to">до </label>
             <input type="number" value="9000" id="cost-to">
-        </div>
+           </div>
+          </div>
 
-        <div><meter id="cost-form" min="0" max="9000" value="7000">
-             </meter>
-        </div><!--рисует прогресс линию-->
+          <div class="cost-range">
+           <div class="cost-range-line">
+            <button type="button"><span class="visually-hidden">Левый ползунок</span></button>
+            <button type="button"><span class="visually-hidden">Правый ползунок</span></button>
+           </div>
+          </div><!--рисует прогресс линию-->
+         </fieldset>
 
         <div>
-        <button class="button" type="submit">Применить</button>
-        <button class="button-reset" type="reset">Сбросить</button>
+          <button class="button" type="submit">Применить</button>
+          <button class="button-reset" type="reset">Сбросить</button>
         </div>
       </form>
 
@@ -124,7 +136,9 @@
             <p>Гостиница</p><b>От 4000 P</b>
             <a href="#" class="button">Подробнее</a>
             <button class="button" type="button">В избранное</button>
-             <img src="image/img-catalog/star-1.png" alt="Рейтинг">
+            <p class="stars four-stars">
+              <span class="visually-hidden"> Отель 4 звезды</span>
+            </p>
 
              <span> Рейтинг: 8,5 </span>
           </li>
@@ -134,7 +148,9 @@
             <p>Гостиница</p><b>От 5000 P</b>
             <a href="#" class="button">Подробнее</a>
             <button class="button" type="button">В избранное</button>
-            <img src="image/img-catalog/star-1.png" alt="Рейтинг">
+            <p class="stars four-stars">
+              <span class="visually-hidden"> Отель 4 звезды</span>
+            </p>
 
 
             <span> Рейтинг: 9,2 </span>
@@ -145,7 +161,9 @@
             <p>Гостиница</p><b>От 2500 P</b>
             <a href="#" class="button">Подробнее</a>
             <button class="button" type="button">В избранное</button>
-            <img src="image/img-catalog/star-1.png" alt="Рейтинг">
+            <p class="stars three-stars">
+              <span class="visually-hidden"> Отель 3 звезды</span>
+            </p>
 
             <span> Рейтинг: 6,9</span>
           </li>
@@ -155,21 +173,35 @@
             <p>Гостиница</p><b>От 1500 P</b>
             <a href="#" class="button">Подробнее</a>
             <button class="button" type="button">В избранное</button>
-            <img src="image/img-catalog/star-1.png" alt="Рейтинг">
-
+            <p class="stars two-stars">
+              <span class="visually-hidden"> Отель 2 звезды</span>
+            </p>
             <span> Рейтинг: 5,0 </span>
           </li>
 
         </ul>
 
         <div class="pangination-main">
-          <a href="#"><p>1</p></a>
-          <a href="#"><p>2</p></a>
-          <a href="#"><p>3</p></a>
-          <a href="#"><p>4</p></a>
-          <a href="#"><p>...</p></a>
-          <a href="#"><p>10</p></a>
-
+          <ul class="pangination">
+            <li class="pangination-item">
+              <a class="pangination-link" href="#">1</a>
+            </li>
+            <li class="pangination-item">
+              <a class="pangination-link" href="#">2</a>
+            </li>
+            <li class="pangination-item">
+              <a class="pangination-link" href="#">3</a>
+            </li>
+            <li class="pangination-item">
+              <a class="pangination-link" href="#">4</a>
+            </li>
+                       <li class="pangination-item">
+              <a class="pangination-link" href="#">...</a>
+            </li>
+            <li class="pangination-item">
+              <a class="pangination-link" href="#">10</a>
+            </li>
+          </ul>
 
         </div>
 
