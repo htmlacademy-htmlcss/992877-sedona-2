@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <div class="shadow-box">
+    <div class="shadow-box content"">
     <header class="page-header">
       <a class="logo">
         <img src="image/logo-header.svg" alt="Логотип городка Седона в Аризоне" width="140" height="70">
@@ -41,13 +41,13 @@
           <div class="welcome-center">
           <img src="image/welcome.svg" alt="Добро пожаловать в Седону" >
           </div>
-         <!-- <img src="image/Vector.svg" alt="Украшение"> -->
+
         </div>
      </section>
       <section class="reason-box">
-        <h2>Седона — небольшой городок в Аризоне,
+        <h2 class="name-box">Седона — небольшой городок в Аризоне,
         заслуживающий большего! </h2>
-        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p class="name-p">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 
       </section>
       <section class="advantages-box">
@@ -55,73 +55,83 @@
 
 
         <ul>
-          <li>
-            <h3>Настоящий городок</h3>
+          <li class="header-advantages-items">
+            <h3 class="header-name">Настоящий городок</h3>
             <p> Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-           <img src="image/view-hotel.jpg" alt="Вид на Гостиницу" width="800" height="385">
+            <span class="header-advantages-img">
+              <img src="image/view-hotel.jpg" alt="Вид на Гостиницу" width="800" height="385">
+          </span>
+          </li>
+          <li>
+            <h3 class="header-name-line">Небольшая площадь</h3>
+            <hr width="60">
+            <p class="name-p-line"> Все достопримечательности находятся очень близко </p>
 
           </li>
-          <li>
-            <h3>Небольшая площадь</h3>
-            <p> Все достопримечательности находятся очень близко </p>
 
-          </li>
           <li>
-            <h3>Красивая дорога</h3>
-            <hr>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <h3 class="header-name-line">Красивая дорога</h3>
+            <hr width="60">
+            <p class="name-p-line">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
+
           <li>
-            <h3>Красивая дорога</h3>
-            <hr>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <h3 class="header-name-line">Мало туристов</h3>
+            <hr width="60">
+            <p class="name-p-line">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li>
+
+          <li class="name-box-items">
             <img src="image/bridge.jpg" alt="Вид на мост">
 
-             <h3>Там есть
+             <h3 class="header-name">Там есть
               мост дьявола</h3>
-            <hr>
-            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <hr width="60">
+            <p >Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
         </ul>
 
         <div>
-          <p>Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-          <p>Опытный персонал и качественное обслуживание!</p>
+          <p class="header-name-p">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+          <p class="header-name-under-p">Опытный персонал и качественное обслуживание!</p>
         </div>
 
           <ul>
-            <li><h3>Жилье</h3>
-              <img src="image/advantage/home.svg" alt="Жилье">
-             <p>Рекомендуем пожить в настоящем мотеле,
-              всё как в кино!</p>
+            <li class="header-description-list">
+                <h3 class="header-description">Жилье</h3>
+                <img src="image/advantage/home.svg" alt="Жилье">
+              <p class="header-description-underp">Рекомендуем пожить в настоящем мотеле,
+                всё как в кино!</p>
             </li>
-            <li><h3>Еда</h3>
+
+            <li class="header-description-list">
+
+              <h3 class="header-description">Еда</h3>
               <img src="image/advantage/food.svg" alt="Бургер">
-             <p>Всегда заказывайте
+             <p class="header-description-underp">Всегда заказывайте
               топовый фирменный бургер, вы не разочаруетесь!</p></li>
-           <li><h3>Сувениры</h3>
+           <li class="header-description-list">
+            <h3 class="header-description">Сувениры</h3>
             <img src="image/advantage/present.svg" alt="Сувениры">
-             <p>Не только китайского, но и настоящего местного производства!</p>
+             <p class="header-description-underp">Не только китайского, но и настоящего местного производства!</p>
             </li>
           </ul>
       </section>
       <section>
         <h2 class="visually-hidden">Форма предполагаемые даты поездки </h2>
-        <p>Заинтересовались?
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <p class="question-p">Заинтересовались?</p>
+          <p class="question-p-under">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button type="button" class="question-button text-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       </section>
 
       <section class="newsletter">
-        <h2>Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="newsletter-p" >Подпишитесь на рассылку</h2>
+        <p class="newsletter-p-under">Только полезная информация и никакого спама, честное бойскаутское!</p>
 
-          <form action="https://echo.htmlacademy.ru" method="post">
+          <form class="email-input" action="https://echo.htmlacademy.ru" method="post">
 
-              <input name="e-mail" type="email" placeholder="Ваш e-mail">
-              <input type="submit" value="ПОДПИСАТЬСЯ">
+              <input class="email-input" name="e-mail" type="email" placeholder="Ваш e-mail">
+              <input type="submit" value="ПОДПИСАТЬСЯ" class="submit-button">
           </form>
       </section>
 
@@ -140,7 +150,10 @@
         </li>
       </ul>
       </div>
+       <span class="tel-a">
+
       <a href="tel:+7818121212">+7 (812) 812-12-12</a>
+       </span>
       <img src="image/Logo.svg" alt="Логотип HTML Academy" width="115" height="33">
     </footer>
     <section class="form-pop-up-search">
